@@ -88,7 +88,7 @@ function RenderPage(page) {
                 catch (e) {
                 }
                 try {
-                        var __fileName = __bookName +'_'+ (__pageNumber++) + '.png';
+                        var __fileName = __bookName +'_'+ (++__pageNumber) + '.png';
                         var c = $("[data-pageid='"+page+"'] canvas").get(0);
                         var __image__ = c.toDataURL('image/png').replace('image/png','image/octet-stream');                                                    
                         $('<a href=\"'+__image__+'\" download=\"'+__fileName+'\" >')[0].click();
