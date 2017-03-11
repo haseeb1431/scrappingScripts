@@ -84,7 +84,7 @@ function renderEbookPage(data)
 			var __image__ = c.toDataURL('image/png').replace('image/png','image/octet-stream');                                                    
 			$('<a href=\"'+__image__+'\" download=\"'+__fileName+'\" >')[0].click();
 		} catch (e) {
-				if(console) console.log(e);
+				if(console) console.error(e);
 		}
 		//endRegion Download
 		
